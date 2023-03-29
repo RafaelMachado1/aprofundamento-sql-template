@@ -82,3 +82,20 @@ SELECT * from pokemons
 LIMIT 3
 OFFSET 5; 
 
+
+
+-- Fixação --
+--Busque por todos os pokémons aplicando:
+
+-- 1. Filtrar o resultado, mostrando somente os itens que possuem a coluna type valendo fire ou grass
+SELECT * FROM pokemons
+WHERE type = "fire" 
+    OR type = "grass";
+
+-- 2. Ordem crescente baseado na coluna attack
+SELECT * FROM pokemons ORDER BY attack ASC;
+
+-- 3. Resultado das linhas limitado a 3 e iniciando a partir da terceira linha
+SELECT * FROM pokemons
+LIMIT 3
+OFFSET 3;
